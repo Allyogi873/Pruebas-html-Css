@@ -1,0 +1,399 @@
+.section_padding {
+    padding: 130px 0px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 18, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_padding {
+        padding: 80px 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 18, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_padding {
+        padding: 70px 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* line 18, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_padding {
+        padding: 70px 0px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 18, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_padding {
+        padding: 70px 0px;
+    }
+}
+/* line 119, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+img {
+    max-width: 100%;
+}
+
+
+/* line 129, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+.section_tittle {
+    margin-bottom: 94px;
+}
+
+@media (max-width: 991px) {
+    /* line 129, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_tittle {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 129, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_tittle {
+        margin-bottom: 50px;
+    }
+}
+
+/* line 139, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+.section_tittle h2 {
+    font-size: 50px;
+    color: #191d34;
+    line-height: 1.1;
+    font-weight: 700;
+    position: relative;
+}
+
+    /* line 145, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_tittle h2:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -16px;
+        width: 100px;
+        height: 1px;
+        background-color: #fe5c24;
+    }
+
+@media (max-width: 576px) {
+    /* line 139, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_tittle h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 139, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_tittle h2 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 139, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_tittle h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 139, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .section_tittle h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+/* line 171, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+.section_tittle p {
+    color: #777;
+    font-weight: 400;
+}
+
+
+@media (max-width: 576px) {
+    /* line 243, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 3640px) {
+    /* line 249, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* line 253, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_common.scss */
+.section_bg {
+    background-color: #f7f7f7;
+}
+
+/**************** common css end ****************/
+/* Main Button Area css
+============================================================================================ */
+/* line 3, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_button.scss */
+.submit_btn {
+    width: auto;
+    display: inline-block;
+    background: #fff;
+    padding: 0px 50px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 50px;
+    border-radius: 5px;
+    outline: none !important;
+    box-shadow: none !important;
+    text-align: center;
+    border: 1px solid #fdcb9e;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+    /* line 19, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_button.scss */
+    .submit_btn:hover {
+        background: transparent;
+    }
+
+/**************** learn_about css start ****************/
+/* line 2, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+.portfolio_part {
+    margin-bottom: -20px;
+}
+
+    /* line 4, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns {
+        overflow: hidden;
+    }
+
+    /* line 7, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part p {
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    /* line 12, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-title {
+        font-size: 30px;
+        color: white !important;
+        font-weight: 700;
+        line-height: 1.833;
+        margin-bottom: 20px;
+    }
+
+    /* line 20, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+        orphans: 1;
+        widows: 1;
+    }
+
+@media (max-width: 576px) {
+    /* line 20, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 20, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+/* line 46, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+.portfolio_part .card-columns .blockquote {
+    padding: 0px 10px 54px 0px;
+}
+
+@media (max-width: 576px) {
+    /* line 46, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .blockquote {
+        padding: 0px 10px 10px 0px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 46, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .blockquote {
+        padding: 0px 10px 10px 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 46, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .blockquote {
+        padding: 0px 10px 10px 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 46, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .blockquote {
+        padding: 0px 10px 0px 0px;
+    }
+}
+
+/* line 65, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+.portfolio_part .card-columns .blockquote h2 {
+    font-size: 45px;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+    /* line 70, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .blockquote h2:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -16px;
+        width: 50px;
+        height: 1px;
+        background-color: #fe5c24;
+    }
+
+@media (max-width: 576px) {
+    /* line 65, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .blockquote h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 65, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .blockquote h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 65, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .blockquote h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 65, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .blockquote h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+}
+
+/* line 101, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+.portfolio_part .card-columns .blockquote p {
+    margin-bottom: 8px;
+    color: #fff !important;
+}
+
+/* line 108, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+.portfolio_part .card-columns .portfolio_btn {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fe5c24;
+}
+
+    /* line 112, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .portfolio_btn img {
+        width: 20px;
+        height: 5px;
+    }
+
+/* line 117, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+.portfolio_part .card-columns .overlay {
+    position: relative;
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+    /* line 121, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .overlay:after {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 90%;
+        height: 100%;
+        background: url(img/portfolio_overlay.png);
+        content: "";
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+        opacity: 0;
+        -webkit-transition: 1s;
+        transition: 1s;
+    }
+
+/* line 136, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+.portfolio_part .card-columns .card {
+    border: 0px solid transparent;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    /* line 141, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .card .card-body {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        padding: 40px 40px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+        /* line 153, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+        .portfolio_part .card-columns .card .card-body:hover h5 {
+            color: #fe5c24;
+        }
+
+        /* line 158, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+        .portfolio_part .card-columns .card .card-body h5 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+    /* line 166, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .card .card-img-top {
+        border-top-left-radius: calc(0px);
+        border-top-right-radius: calc(0px);
+    }
+
+    /* line 172, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .card:hover .card-body {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0px;
+        top: 20px;
+    }
+
+    /* line 179, ../../01 cl html template/New folder/May 2019/175  Supreme Industry/Supreme Industry Html/sass/_portfolio.scss */
+    .portfolio_part .card-columns .card:hover .overlay:after {
+        opacity: 1;
+    }

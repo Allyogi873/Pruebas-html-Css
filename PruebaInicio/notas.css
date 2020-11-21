@@ -1,0 +1,127 @@
+:root {
+	--main-color: #1accfd;
+	--secondary-color: #1accfd;
+	--sans: "josefin sans", sans serif;
+}
+
+body {
+	background: #fffff;
+}
+
+.hidden {
+	display: none;
+}
+
+.inner {
+	margin-left: 500px;
+	margin-top: 0px;
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	opacity: 0;
+	transition: 1s;
+	visibility: hidden;
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 70%;
+	height: 60%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+	font-size: 1.3rem;
+}
+
+.number::before {
+	content: "";
+	position: absolute;
+	top: -130px;
+	right: -30px;
+	width: 90px;
+	height: 180px;
+	background: var(--secondary-color);
+	transform: rotate(-45deg);
+	z-index: -1;
+	box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.5);
+}
+
+.number {
+	font-family: var(--sans);
+	position: absolute;
+	margin: 0;
+	top: 15px;
+	right: 15px;
+	color: fade-out(#ff5722, 0);
+}
+
+.quote {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	width: 100%;
+}
+
+.credit {
+	position: absolute;
+	top: 60%;
+	right: 5%;
+	font-family: var(--sans);
+	font-size: 0.8rem;
+	font-weight: 500;
+	&::before {
+		content: "💬";
+		vertical-align: middle;
+		font-size: 1.4rem;
+	}
+}
+
+.fas {
+	font-size: 2.5rem;
+	position: absolute;
+	top: 3%;
+	left: 4%;
+	color: rgba(26, 204, 253, 0.3);
+}
+
+input {
+	width: 100%;
+	transition: 0.3s;
+}
+
+.button p {
+	background: #1accfd;
+	text-align: center;
+	color: #ff5722;
+	padding: 1rem 0;
+	width: 100%;
+	font-family: var(--sans);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	transition: 0.2s ease-out;
+}
+
+.button p:hover {
+	background: var(--secondary-color);
+	cursor: pointer;
+}
+
+#card-one:checked ~ .container .inner-one,
+#card-two:checked ~ .container .inner-two,
+#card-three:checked ~ .container .inner-three {
+	opacity: 1;
+	visibility: visible;
+}
+
+#card-one:checked ~ .container .inner-two,
+#card-two:checked ~ .container .inner-three,
+#card-three:checked ~ .container .inner-one {
+	transform: scale(0.85);
+	transform: scale(1) translate(-20rem);
+}

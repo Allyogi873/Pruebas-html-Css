@@ -1,0 +1,163 @@
+<!--
+Arlo Web Control Demo - Cataloge - Theme 6
+Documentation: https://developer.arlo.co/doc/webcontrols/categorycatalogue
+-->
+<!-- Estilo y JavaScript -->
+<html>
+	<head>
+  
+		<title>Mi página de ejemplo</title>
+	</head>
+	<body>
+
+  Aquí va el contenido
+  
+
+
+
+  <!--
+Arlo Web Control Demo - Cataloge - Theme 6
+Documentation: https://developer.arlo.co/doc/webcontrols/categorycatalogue
+-->
+
+<!-- Target Elements -->
+<div class="arlo arlo-catalogue">
+  <div class="arlo-header">
+    <div id="arlo-category-header"></div>
+  </div>
+
+  <div class="arlo-filters-container">
+    <div class="arlo-filters">
+      <div id="arlo-event-filter"></div>
+      <div id="arlo-catalogue-filter"></div>
+    </div>
+
+    <div id="arlo-filter-toggle">
+      <div class="arlo-filter-toggle-show">
+        Show filters <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="arlo-filter-toggle-hide">
+        Hide filters <i class="fa fa-chevron-up"></i>
+      </div>
+    </div>
+  </div>
+
+  <div id="arlo-catalogue"></div>
+
+  <div id="arlo-category-footer"></div>
+</div>
+
+<!-- Templates -->
+<script type='text/template' id='catalogue-template'>
+  <div class="arlo-category-name arlo-font-special">
+    <%= Name %>
+  </div>
+
+  <%= showCategoryEventTemplateCategoryItems({
+      template: "#event-template-template",
+      loadImmediately: true,
+      maxCount: 3,
+      includeLoadMoreButton: true,
+      loadMoreButtonText: "Show More",
+      callbacks: {onShow: "categoryItemsOnShow"},
+			customUrls: {
+          eventtemplate: "/event-template/",
+          venue: "/venue/",
+          presenter: "/presenter/"
+      }
+   }) %>
+</script>
+
+<script type='text/template' id='event-template-template'>
+
+  <div class="arlo-catalogueitem-card">
+
+    <div class="arlo-catalogueitem-card-front">
+      
+        <% if (ListImageUri !== "" ) { %>
+            <div class="arlo-image-placeholder"></div>
+            <div class="arlo-catalogueitem-image with-image image-loading" style="background-image: url('<%= ListImageUri %>')"></div>
+        <% } else{%>
+            <div class="arlo-catalogueitem-image no-image"></div>
+        <%}%>
+
+        <div class="arlo-detail">
+            <div class="arlo-title arlo-text-color-secondary">
+                <%- Title %>
+            </div>
+            <div class="arlo-advertisedduration arlo-text-color-light">
+                <%= AdvertisedDuration %>
+            </div>
+            <div class="arlo-offers arlo-text-color-light">
+                <%= formatAdvertisedOffers({showSingleOffer: true, freeText: "Free"}) %>
+            </div>
+        </div>
+
+    </div>
+
+<a href="<%= ViewUri %>" class="arlo-template-link">
+    <div class="arlo-catalogueitem-card-back">
+
+      <div class="arlo-summary arlo-text-color-primary">
+        <%- Summary %>
+      </div>
+
+      <div class="arlo-next-running-container">
+        <div class="arlo-next-running-title arlo-text-color-light">
+          Next Running
+        </div>
+
+        <div class="nextrunning-<%= EventTemplateID %> arlo-next-running-wrapper" data-registeruri="<%= RegisterInterestUri %>" data-customuri="<%if(typeof ViewUri!=='undefined'){%><%=ViewUri %><%}%>">
+
+        </div>
+      </div>
+
+    </div>
+</a>
+
+  </div>
+
+
+</script>
+
+<script type='text/template' id='event-template'>
+  <div>
+    <a href="<%= ViewUri %>" class="arlo-next-running">
+      <%= Location.Name %>
+        <%= formatDate(StartDateTime, "DD MMM YYYY") %>
+    </a>
+  </div>
+</script>
+
+<script type='text/template' id='category-header-template'>
+  <div class="arlo-page-header">
+    <div class="arlo-page-title arlo-text-color-primary">
+      <%- Name %>
+    </div>
+    <div class="arlo-font-primary">
+      <%= Description.Text %>
+    </div>
+  </div>
+</script>
+
+<script type='text/template' id='category-footer-template'>
+  <div class="arlo-page-footer arlo-full-width">
+    <%= Footer.Text %>
+  </div>
+</script>
+
+<script type='text/template' id='filter-template'>
+  <div class="arlo-locations-filter">
+    <%= showFilter({filterCode: "locname", showCount: false, callbacks: {onRender: onFilterLoad} }) %>
+  </div>
+</script>
+
+<!-- Dependencies -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="//packages.arlocdn.net/jscontrols/1.0/resources/resizesensor.js" charset="utf-8"></script>
+<script type="text/javascript" src="//packages.arlocdn.net/jscontrols/1.0/resources/elementqueries.js" charset="utf-8"></script>
+<script type="text/javascript" src="//connect.arlocdn.net/jscontrols/1.1/init.js" charset="utf-8" defer="defer"></script> 
+	</body>
+</html>
+

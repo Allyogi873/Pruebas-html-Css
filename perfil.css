@@ -1,0 +1,63 @@
+/* Main styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.encabezado {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 10s infinite linear;
+  animation: stroke 10s infinite linear;
+}
+.encabezado:nth-child(5n + 1) {
+  stroke: #ff002f;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+.encabezado:nth-child(5n + 2) {
+  stroke: #ff6a3c;
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+}
+.encabezado:nth-child(5n + 3) {
+  stroke: #171816;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+.encabezado:nth-child(5n + 4) {
+  stroke: #56d991;
+  -webkit-animation-delay: -8s;
+  animation-delay: -8s;
+}
+.encabezado:nth-child(5n + 5) {
+  stroke: #1accfd;
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+/* Other styles */
+
+.hola {
+  background: #111;
+  background-size: .2em 100%;
+  font: 5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.svgletras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
